@@ -11,13 +11,13 @@ int main()
 	cout << "Enter x=";
 	cin >> x;
 	float rez;
-	int sum = 0;
-	for (int i = 1; i < 6; i++)
+	float prod = 1;
+	for (int i = 1; i < 11; i++)
 	{
-		sum = sum + i + 2 * x;
+		prod = prod * pow(i, 3);
 	}
-	rez = tan(sum);
-	cout << "Y=" << sum << endl;
+	rez = pow(x, 5) + prod;
+	cout << "Z=" << rez << endl;
 
 	system("pause");
 	return 0;
